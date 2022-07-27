@@ -15,6 +15,7 @@ public class MinimumSumFormedByDigits {
         //first element will make a digit with a, and second with b, then count increases, and finally return
         //the sum of a and b
         while(!pq.isEmpty()){
+            // if the element is at the odd position append it in a, otherwise in b
             if(count%2 == 1){
                 a = a*10 + pq.poll();
             }
